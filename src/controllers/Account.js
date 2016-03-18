@@ -19,7 +19,7 @@ var login = function(req, res){
 		return res.status(400).json({error: "RAWR! All feilds required"});
 	}
 	
-	Accoutn.AccountModel.authenticate(req.body.username, req.body.pass, function(err,account){
+	Accout.AccountModel.authenticate(req.body.username, req.body.pass, function(err,account){
 		if(err || !account){
 			return res.status(401).json({error: "Wrong username or password"});
 		}
