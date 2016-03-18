@@ -6,7 +6,7 @@ var cookieParser = require('cookieParser');
 var bodyParser = require('bodyParser');
 var mongoose = require('mongoose');
 
-var dbURL = process.env.MONGOLAB_URI || "mongodb://heroku_4tb71zgh:nfkckpkkjjhchbnm5q12m0n467@ds015929.mlab.com:15929/heroku_4tb71zgh";
+var dbURL = process.env.MONGOLAB_URI || "mongodb://localhost/domoMaker";
 
 var db = mongoose.connect(dbURL, function(err){
 	
