@@ -1,9 +1,9 @@
 var path = require('path');
 var express = require('express');
 var compression = require('copression');
-var favicon = require('favicon');
-var cookieParser = require('cookieParser');
-var bodyParser = require('bodyParser');
+var favicon = require('serve-favicon');
+var cookieParser = require('cookie-Parser');
+var bodyParser = require('body-Parser');
 var mongoose = require('mongoose');
 
 var dbURL = process.env.MONGOLAB_URI || "mongodb://localhost/domoMaker";
