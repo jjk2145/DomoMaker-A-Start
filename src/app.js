@@ -1,9 +1,9 @@
 var path = require('path');
 var express = require('express');
-var compression = require('copression');
+var compression = require('compression');
 var favicon = require('serve-favicon');
 var cookieParser = require('cookie-Parser');
-var bodyParser = require('body-Parser');
+var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 var dbURL = process.env.MONGOLAB_URI || "mongodb://localhost/domoMaker";
@@ -16,7 +16,7 @@ var db = mongoose.connect(dbURL, function(err){
 	}
 });
 
-var router = rquire('./router.s');
+var router = require('./router.js');
 
 var port = process.env.PORT || process.env.NODE_PORT || 3000;
 
@@ -33,7 +33,7 @@ app.use(cookieParser());
 
 router(app);
 
-app.lsten(port, function(err) {
+app.listen(port, function(err) {
 	if(err) {
 		throw err;
 	}
