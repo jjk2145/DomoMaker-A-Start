@@ -6,7 +6,7 @@ var router = function(app){
 	app.get("/signup", controllers.Account.signupPage);
 	app.post("/signup", controllers.Account.signup);
 	app.get("/logout", controllers.Account.logout);
-	app.get("/maker", controllers.Account.makerPage);
+	app.get("/maker", controllers.Domo.makerPage);
 	app.get("/", controllers.Account.loginPage);
 };
 
