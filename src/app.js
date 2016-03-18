@@ -2,7 +2,7 @@ var path = require('path');
 var express = require('express');
 var compression = require('compression');
 var favicon = require('serve-favicon');
-var cookieParser = require('cookie-Parser');
+var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
