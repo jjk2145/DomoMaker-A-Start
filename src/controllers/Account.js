@@ -7,7 +7,7 @@ var loginPage = function(req, res){
 };
 
 var signupPage = function(req, res){
-	res.render('signu');
+	res.render('signup');
 };
 
 var logout = function(req, res){
