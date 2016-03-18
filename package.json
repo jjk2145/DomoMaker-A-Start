@@ -27,7 +27,11 @@
     "express-session": "^1.13.0",
     "helmet": "^1.3.0",
     "jade": "^1.11.0",
+<<<<<<< HEAD
     "mongoose": "^4.4.7",
+=======
+    "mongoose": "^4.4.6",
+>>>>>>> f0d6c36849dabab5081c05d14a932b43e7816a10
     "serve-favicon": "^2.3.0",
     "underscore": "^1.8.3"
   },
