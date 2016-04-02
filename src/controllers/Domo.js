@@ -42,5 +42,17 @@ var makeDomo = function(req, res){
 	
 };
 
+var deleteDomo = function(req, res){
+    Domo.DomoModel.remove({_id: req.params._id}, function(err){
+        if(err){
+            res.json(err);
+        }
+        else{
+            res.redirect('/maker');
+        }        
+    });
+};
+
 module.exports.makerPage = makerPage;
 module.exports.make = makeDomo;
+module.exports.deleteDomo = deleteDomo;
